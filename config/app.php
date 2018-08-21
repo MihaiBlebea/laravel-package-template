@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        MihaiBlebea\Template\TemplateServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -209,6 +210,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Template' => MihaiBlebea\Template\Facades\Template::class,
     ],
 
 ];
