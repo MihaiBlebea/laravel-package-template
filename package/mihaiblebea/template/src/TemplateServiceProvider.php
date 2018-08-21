@@ -15,8 +15,12 @@ class TemplateServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__ . '/../routes/routes.php');
 
+        $this->loadViewsFrom(__DIR__ . '/../resources/views');
+
         $this->publishes([
-            __DIR__ . '/../config/template.php' => config_path('template.php')
+            __DIR__ . '/../config/template.php' => config_path('template.php'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/template'),
+            __DIR__ . '/../migrations' => database_path('migrations')
         ]);
 
         if($this->app->runningInConsole())
