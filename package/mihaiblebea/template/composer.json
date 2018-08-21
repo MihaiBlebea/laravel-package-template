@@ -1,0 +1,38 @@
+{
+    "name": "mihaiblebea/template",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai Blebea",
+            "email": "mihaiserban.blebea@gmail.com",
+            "homepage": "",
+            "role": "Full Stack Web Developer"
+        }
+    ],
+    "support": {
+        "email": "mihaiserban.blebea@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "MihaiBlebea\\Template\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/database": ">=5.0",
+        "illuminate/support": ">=5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "test": [
+            "php vendor/phpunit/phpunit/phpunit"
+        ]
+    }
+}
