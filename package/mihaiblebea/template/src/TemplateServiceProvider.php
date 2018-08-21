@@ -5,7 +5,7 @@ namespace MihaiBlebea\Template;
 use Illuminate\Support\ServiceProvider;
 use MihaiBlebea\Template\Template;
 
-class TemplateProvider extends ServiceProvider
+class TemplateServiceProvider extends ServiceProvider
 {
     public function boot()
     {
