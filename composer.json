@@ -23,7 +23,8 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "MihaiBlebea\\Template\\": "package/mihaiblebea/template/src"
         }
     },
     "autoload-dev": {
