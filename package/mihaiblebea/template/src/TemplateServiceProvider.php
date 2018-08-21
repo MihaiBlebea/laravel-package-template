@@ -4,6 +4,8 @@ namespace MihaiBlebea\Template;
 
 use Illuminate\Support\ServiceProvider;
 use MihaiBlebea\Template\Template;
+use MihaiBlebea\Template\Commands\TemplateCommand;
+
 
 class TemplateServiceProvider extends ServiceProvider
 {
@@ -16,6 +18,13 @@ class TemplateServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/template.php' => config_path('template.php')
         ]);
+
+        if($this->app->runningInConsole())
+        {
+            $this->commands([
+                TemplateCommand::class,
+            ]);
+        }
     }
 
     public function register()
