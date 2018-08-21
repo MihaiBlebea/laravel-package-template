@@ -1,6 +1,6 @@
 # Install the Laravel Package Template
 
-0. Important! Go to the main Laravel app folder and run "git init" to not override this template repo
+0. Important! Go to the main Laravel app folder, delete the ".git" folder and run "git init" to not override this template repo
 1. Clone the repo https://github.com/SerbanBlebea/laravel-package-template.git
 2. Go to /package folder and change the name of the package from "Template" to "Your package name", also change the service provider name and all the files
 3. Go to the main Laravel app and change the composer.json to autoload the new package name
