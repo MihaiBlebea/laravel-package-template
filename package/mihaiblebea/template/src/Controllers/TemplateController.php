@@ -1,6 +1,6 @@
 <?php
 
-namespace SerbanBlebea\UrlShortener\Controllers;
+namespace MihaiBlebea\Template\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
